@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  * для введённого пользователем любого числа. Использовать циклы запрещено.
  */
 public class Task5 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         /*BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int a = Integer.parseInt(reader.readLine());
         */

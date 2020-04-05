@@ -11,7 +11,7 @@ public class ValenReader {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
        return reader.readLine();
     }
-    static int readNumber () throws IOException {
+    static int readNumber () throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
         try {
@@ -19,10 +19,9 @@ public class ValenReader {
         }
         catch (Exception e)
         {
-            System.out.println("Не удалось преобразовать:"+s+" в число");
-
+            //System.out.println("Не удалось преобразовать:"+s+" в число");
+throw new Exception("Не удалось преобразовать:"+s+" в число");
                 }
-        return 666;
     }
 
 }
